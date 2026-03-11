@@ -1,0 +1,146 @@
+// Checkbox hack 
+
+.menu-toggle-input {
+    display: none;
+}
+
+
+// Header
+
+.header_section {
+    width: 100%;
+    padding: 4rem 0;
+    background: rgba(27, 27, 27, 0.8); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    display: block;
+    transition: 0.2s all ease;
+    position: sticky;
+    top: 0;
+    z-index: 1024;
+
+    &.header_sticky {
+        padding: 4rem 0;
+        box-shadow: 0rem 0.2rem 0.5rem rgba(255, 137, 46, 0.15);
+
+        @media #{$md} {
+            padding: 3rem 0;
+        }
+    }
+
+    .logo {
+        img {
+            width: 100%;
+        }
+    }
+
+    .navbar-toggler {
+        max-width: 4.8rem;
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+
+        img {
+            width: 100%;
+            outline: none;
+        }
+    }
+
+    .navbar_nav {
+        ul {
+            gap: 8.3rem;
+
+            li {
+                a {
+                    font-size: 2rem;
+                    font-family: $kallisto;
+                    font-weight: 500;
+                    line-height: 1;
+                    color: $white;
+
+                    &.active {
+                        font-weight: 900;
+                    }
+
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+
+    @media #{$md} {
+        padding: 2rem 0;
+    }
+}
+
+
+// Mobile menu
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $black;
+    z-index: 1050;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    padding: 4rem 0;
+
+    .mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+
+        .offcanvas-title {
+            img {
+                width: 100%;
+            }
+        }
+
+        .menu-close {
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            max-width: 4.3rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .mobile-menu-body {
+        padding-top: 16rem;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 4.5rem;
+
+            a {
+                font-size: 2.6rem;
+                font-family: $kallisto;
+                font-weight: 300;
+                line-height: 1;
+                color: $white;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.menu-toggle-input:checked ~ .mobile-menu {
+    transform: translateX(0);
+}

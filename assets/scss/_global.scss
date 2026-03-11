@@ -1,0 +1,342 @@
+/* Google fonts */
+
+// inter
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// IBM Plex Sans
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Web fonts */
+
+@font-face {
+	font-family: 'Kallisto';
+	src: url('../webfonts/Kallisto-Thin.ttf');
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Kallisto';
+	src: url('../webfonts/Kallisto-Medium.ttf');
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Kallisto';
+	src: url('../webfonts/Kallisto-Bold.ttf');
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Kallisto';
+	src: url('../webfonts/Kallisto-Heavy.ttf');
+	font-weight: 900;
+	font-display: swap;
+}
+
+
+
+/* Basic css */
+
+// 1rem = 10px
+html {
+	font-size: 0.521vw;
+
+	@media #{$xxl} {
+		font-size: 0.578vw;
+	}
+
+	@media #{$md} {
+		font-size: 62.5%;
+	}
+
+	@media #{$xs} {
+		font-size: 2.54vw;
+	}
+}
+
+
+html,
+body,
+header,
+footer,
+main,
+nav,
+section,
+div,
+menu,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+button {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	transition: 200ms;
+	color: inherit;
+
+	&:hover {
+		color: inherit;
+	}
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+/* body */
+body {
+	font-size: 1.6rem;
+	font-family: $inter;
+	font-weight: 400;
+	font-style: normal;
+	line-height: normal;
+	color: $white;
+	background: $black;
+}
+
+.container {
+	max-width: 165.6rem;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	@media #{$md} {
+		max-width: 74rem;
+	}
+
+	@media #{$sm} {
+		max-width: 55rem;
+		padding: 0 2.4rem;
+	}
+}
+
+// title
+
+.title_xxl {
+	font-size: 12rem;
+	font-family: $kallisto;
+	font-weight: 900;
+	line-height: 1.10;
+	color: $white;
+
+	@media #{$md} {
+		font-size: 8rem;
+	}
+
+	@media #{$sm} {
+		font-size: 6rem;
+	}
+}
+
+.title_xl {
+	font-size: 8.7rem;
+	font-family: $kallisto;
+	font-weight: 900;
+	line-height: 1;
+	color: $white;
+
+	@media #{$md} {
+		font-size: 5.7rem;
+	}
+}
+
+.title_lg {
+	font-size: 6.4rem;
+	font-family: $kallisto;
+	font-weight: 900;
+	line-height: 1.17;
+	color: $white;
+
+	@media #{$md} {
+		font-size: 4.5rem;
+		line-height: 1.25;
+	}
+
+	@media #{$sm} {
+		font-size: 3.3rem;
+	}
+}
+
+.title_md {
+	font-size: 4.8rem;
+	font-family: $kallisto;
+	font-weight: 900;
+	line-height: 1;
+	color: $white;
+
+	@media #{$md} {
+		font-size: 4rem;
+	}
+
+	@media #{$sm} {
+		font-size: 3.2rem;
+	}
+}
+
+.title_sm {
+	font-size: 3.2rem;
+	font-family: $kallisto;
+	font-weight: 700;
+	line-height: 1.20;
+	color: $white;
+
+	@media #{$sm} {
+		font-size: 1.7rem;
+	}
+}
+
+// texts
+
+.text_xxl {
+	font-size: 4rem;
+	font-family: $kallisto;
+	font-weight: 500;
+	line-height: 1.20;
+	color: $grey;
+
+	@media #{$md} {
+		font-size: 3.2rem;
+	}
+
+	@media #{$sm} {
+		font-size: 2.5rem;
+	}
+}
+
+.text_md {
+	font-size: 2.4rem;
+	font-family: $inter;
+	font-weight: 300;
+	line-height: 1.51;
+	color: $white;
+
+	@media #{$sm} {
+		font-size: 1.8rem;
+		line-height: 1.25;
+	}
+}
+
+.text_base {
+	font-size: 2rem;
+	font-family: $inter;
+	font-weight: 300;
+	line-height: 1;
+	color: $white;
+
+	@media #{$sm} {
+		font-size: 1.8rem;
+	}
+}
+
+
+// Button
+
+.button {
+	display: inline-block;
+	font-size: 2rem;
+	font-family: $kallisto;
+	font-weight: 500;
+	font-style: normal;
+	color: $white;
+	background: transparent;
+	border: 2px solid $orange;
+	border-radius: 20rem;
+	transition: 200ms;
+	padding: 1.9rem 13.2rem;
+	margin-top: 1.5rem;
+
+	&:hover {
+		background: $orange;
+		color: $black;
+	}
+
+	@media #{$sm} {
+		font-size: 1.6rem;
+		padding: 1.5rem 6rem;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+/* CSS Animations */
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(4rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes zoomOut {
+	from {
+		opacity: 0;
+		transform: scale(1.08);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.fade-up {
+	opacity: 0;
+	animation: fadeUp 0.7s ease forwards;
+}
+
+.zoom-out {
+	opacity: 0;
+	animation: zoomOut 1s ease forwards;
+}
+
+
+.fade-up:nth-child(1) { animation-delay: 0.1s; }
+.fade-up:nth-child(2) { animation-delay: 0.2s; }
+.fade-up:nth-child(3) { animation-delay: 0.3s; }
+.fade-up:nth-child(4) { animation-delay: 0.4s; }
+.fade-up:nth-child(5) { animation-delay: 0.5s; }
+.fade-up:nth-child(6) { animation-delay: 0.6s; }
+.fade-up:nth-child(7) { animation-delay: 0.7s; }
+.fade-up:nth-child(8) { animation-delay: 0.8s; }
+
+
+@media (prefers-reduced-motion: reduce) {
+	.fade-up,
+	.zoom-out {
+		animation: none;
+		opacity: 1;
+	}
+}

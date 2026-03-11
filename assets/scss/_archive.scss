@@ -1,0 +1,33 @@
+// hero section
+.archive_hero_section {
+    .archive_hero_content {
+        h1 {
+            padding: 0;
+            padding-bottom: 0.8rem;
+
+            @media #{$md} {
+                br {
+                    display: none;
+                }
+            }
+
+            @media #{$sm} {
+                padding-bottom: 1.5rem;
+            }
+        }
+
+        p {
+            font-family: $kallisto;
+            max-width: 122rem;
+        }
+    }
+}
+
+// Design section
+.brand_desing_section {
+    padding: 10rem 0 13rem;
+
+    @media #{$sm} {
+        padding: 4rem 0 9rem;
+    }
+}

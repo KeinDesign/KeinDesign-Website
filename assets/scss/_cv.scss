@@ -1,0 +1,289 @@
+// hero section
+.cv_hero_section {
+    padding-bottom: 10rem;
+
+    .about_hero_content {
+        padding-bottom: 6rem;
+
+        h1 {
+            padding-bottom: 2.5rem;
+        }
+
+        p {
+            max-width: 130rem;
+        }
+    }
+
+    .parsonal_info {
+        border: 0.1rem solid;
+        border-radius: 0.8rem;
+        border-color: $white;
+        padding: 7.1rem 14.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+
+            img {
+                width: 2.4rem;
+
+                @media #{$sm} {
+                    width: 2rem;
+                }
+            }
+
+            span {
+                font-weight: 700;
+            }
+
+            &.location {
+                margin-left: -3.3rem;
+
+                @media #{$md} {
+                    margin: 0;
+                }
+            }
+        }
+
+        .info_left {
+            p {
+                padding-bottom: 1rem;
+
+                &:last-child {
+                    padding: 0;
+                }
+
+                @media #{$md} {
+                    padding-bottom: 1rem;
+                }
+            }
+
+            @media #{$md} {
+                padding-bottom: 1rem;
+                margin-left: -4rem;
+            }
+        }
+
+        .info_right {
+            p {
+                padding-bottom: 1rem;
+
+                &:last-child {
+                    padding: 0;
+                }
+            }
+        }
+
+        @media #{$md} {
+            flex-direction: column;
+            padding: 5rem 7rem;
+        }
+
+        @media #{$sm} {
+            flex-direction: column;
+            padding: 5rem 2rem;
+        }
+    }
+
+    @media #{$sm} {
+        padding-bottom: 7rem;
+    }
+}
+
+// About Me section
+.about_me_section {
+    padding-bottom: 13rem;
+
+    .about_education {
+        padding-bottom: 8rem;
+
+        .enter_title {
+            padding-bottom: 6rem;
+
+            @media #{$md} {
+                padding-bottom: 4.5rem;
+            }
+
+            @media #{$sm} {
+                padding-bottom: 3.5rem;
+                line-height: 1.20;
+            }
+        }
+
+        .education,
+        .school_education {
+            .years {
+                font-size: 3.6rem;
+                font-weight: 800;
+                line-height: 1;
+                color: $white;
+                padding-bottom: 4rem;
+                position: relative;
+                padding-left: 3.3rem;
+                margin-left: 2.2rem;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 1rem;
+                    height: 1rem;
+                    background: $white;
+                    border-radius: 50%;
+                    left: 0;
+                    top: 1.3rem;
+                }
+
+                @media #{$sm} {
+                    font-size: 2.8rem;
+                    padding-bottom: 2.5rem;
+                    padding-left: 2rem;
+
+                    &::before {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        top: 1rem;
+                    }
+                }
+            }
+
+            .degree {
+                line-height: 1.20;
+                color: $dark-white;
+                padding-bottom: 2rem;
+
+                span {
+                    font-weight: 500;
+                }
+            }
+
+            .skills {
+                h4 {
+                    font-weight: 500;
+                    color: #888888;
+                }
+
+                ul {
+                    li {
+                        line-height: 1.20;
+                        color: #888888;
+                    }
+                }
+            }
+        }
+
+        .education {
+            &.p_bottom {
+                padding-bottom: 1.9rem;
+            }
+
+            &.p_top {
+                padding-top: 3.5rem;
+            }
+        }
+
+        .school_education {
+            border-top: 0.1rem solid;
+            border-bottom: 0.1rem solid;
+            border-color: $orange;
+            padding: 4.8rem 0 3rem;
+
+            .degree {
+                color: #888888;
+            }
+        }
+    }
+
+    .about_experience {
+        .experience_info {
+            .years {
+                padding-bottom: 0.6rem;
+            }
+
+            .experience {
+                font-size: 3.2rem;
+                font-family: $inter;
+                font-weight: 600;
+                line-height: 1;
+                color: $dark-white;
+                padding-bottom: 2.5rem;
+
+                @media #{$sm} {
+                    font-size: 2.6rem;
+                }
+            }
+
+            p {
+                color: #888888;
+                line-height: 1.20;
+
+                &.subtitle {
+                    padding-bottom: 1rem;
+                }
+
+                &.text {
+                    max-width: 105rem;
+                }
+            }
+
+            &.padding {
+                padding: 3.5rem 0 6rem;
+            }
+
+            &.p_bottom {
+                padding-bottom: 4.8rem;
+            }
+
+            &.p_top {
+                padding-top: 4.4rem;
+            }
+        }
+    }
+
+    .summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .summary_button {
+            a {
+                display: inline-flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 1.9rem 9.2rem;
+
+                img {
+                    width: 4rem;
+                }
+
+                @media #{$sm} {
+                    padding: 1rem 9.2rem;
+
+                    img {
+                        width: 3rem;
+                    }
+                }
+            }
+
+            @media #{$sm} {
+                text-align: center;
+            }
+        }
+
+        @media #{$md} {
+            flex-direction: column;
+
+            h3 {
+                padding-bottom: 4rem;
+            }
+        }
+    }
+
+    @media #{$sm} {
+        padding-bottom: 9rem;
+    }
+}

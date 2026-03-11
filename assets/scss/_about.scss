@@ -1,0 +1,181 @@
+// hero section
+.about_hero_section {
+    padding: 10rem 0 4.7rem;
+
+    .about_hero_content {
+
+        h3 {
+            font-weight: 300;
+            line-height: 1.20;
+            color: $grey;
+            padding-bottom: 0.9rem;
+
+            @media #{$sm} {
+                font-size: 2.4rem;
+            }
+        }
+
+        h1 {
+            padding-bottom: 5rem;
+
+            @media #{$md} {
+                padding-bottom: 3rem;
+            }
+        }
+
+        h2 {
+            padding-bottom: 2rem;
+
+            @media #{$sm} {
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        p {
+            max-width: 102.3rem;
+            font-family: $ibm-plex-sans;
+            color: $grey;
+            padding-bottom: 2rem;
+
+            .medium {
+                font-weight: 500;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+// approach section
+.approach_section {
+    padding: 5rem 0 15rem;
+
+    .approach_img {
+        margin-bottom: 5rem;
+        border-radius: 0.8rem;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            border-radius: 0.8rem;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            @media #{$sm} {
+                height: 28rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .approach_title_box {
+        padding-bottom: 4rem;
+
+        h3 {
+            padding-bottom: 2rem;
+        }
+
+        p {
+            max-width: 87rem;
+            line-height: 1.25;
+            color: $grey;
+        }
+    }
+
+    .approach_item_box {
+        border: 0.1rem solid;
+        border-radius: 0.8rem;
+        border-color: $white;
+        padding: 9.5rem 8.4rem 8.2rem 8.6rem;
+
+        .row {
+            --bs-gutter-y: 4rem;
+
+            .approach_item {
+                h3 {
+                    color: $orange;
+                    padding-bottom: 3rem;
+
+                    @media #{$md} {
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    max-width: 39rem;
+                    line-height: 1.20;
+
+                    @media #{$md} {
+                        max-width: 100%;
+                        text-align: center;
+                    }
+                }
+
+                &.padding {
+                    padding-left: 1.9rem;
+
+                    @media #{$md} {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        @media #{$sm} {
+            padding: 7rem 2rem;
+        }
+    }
+
+    @media #{$md} {
+        padding-bottom: 9rem;
+    }
+}
+
+// value section
+.value_section {
+    padding-bottom: 12rem;
+
+    .value_img {
+        max-width: 66rem;
+        overflow: hidden;
+        border-radius: 0.8rem;
+
+        img {
+            width: 100%;
+            border-radius: 0.8rem;
+            transition: 300ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        @media #{$md} {
+            max-width: 100%;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .value_content {
+        p {
+            padding: 2rem 0 6rem;
+            line-height: 1.15;
+        }
+
+        .value_button {
+            a {
+                padding: 1.9rem 9.3rem;
+            }
+        }
+    }
+
+    @media #{$md} {
+        padding-bottom: 9rem;
+    }
+}
