@@ -1302,6 +1302,7 @@ body {
 @media (max-width: 767px) {
   .singola_hero_section .hero_top h1 {
     padding-bottom: 4rem;
+    font-size: 4rem;
   }
 }
 .singola_hero_section .hero_top .singola_hero_img {
