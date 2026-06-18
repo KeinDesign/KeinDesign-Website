@@ -3,5 +3,11 @@
     "allow": [
       "Bash(gh auth *)"
     ]
-  }
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "savePath": "/assets/css"
+    }
+  ]
 }
